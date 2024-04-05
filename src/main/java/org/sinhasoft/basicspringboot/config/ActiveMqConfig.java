@@ -33,6 +33,7 @@ public class ActiveMqConfig {
 
     @Bean
     public JmsTemplate jmsTopicTemplate() {
+        //..
         JmsTemplate jmsTemplate = new JmsTemplate();
         jmsTemplate.setConnectionFactory(this.connectionFactory());
         jmsTemplate.setPubSubDomain(true);  // JmsTemplate'in Queue değil Topic'e mesaj göndereceğini belirtir.
